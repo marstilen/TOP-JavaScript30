@@ -32,6 +32,9 @@
       );
 
       // Array.prototype.every() // is everyone 19 or older?
+      let isEveryOneOlder = people.every((person) =>
+        currentYear - person.year > 19 ? true : false
+      );
 
       // Array.prototype.find()
       // Find is like filter, but instead returns just the one you are looking for
