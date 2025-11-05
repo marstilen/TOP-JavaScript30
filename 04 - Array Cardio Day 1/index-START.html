@@ -110,7 +110,6 @@
       // 7. sort Exercise
       // Sort the people alphabetically by last name
       let namesSorted = people.sort();
-      console.log(namesSorted);
 
       // 8. Reduce Exercise
       // Sum up the instances of each of these
@@ -130,6 +129,11 @@
         "car",
         "truck",
       ];
+
+      let count = data.reduce((acc, current) => {
+        acc[current] = (acc[current] || 0) + 1;
+        return acc;
+      }, {});
     </script>
   </body>
 </html>
